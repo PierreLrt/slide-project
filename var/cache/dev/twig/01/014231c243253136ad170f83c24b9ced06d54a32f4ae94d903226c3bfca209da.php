@@ -87,7 +87,10 @@ class __TwigTemplate_b5be27a7e556c7df23c2c99b452f7868646134467d815868e7a870ec20f
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 6
-        echo "    ";
+        echo "    <link href=\"https://cdn.jsdelivr.net/npm/tailwindcss@0.7.4/dist/tailwind.min.css\" rel=\"stylesheet\">
+
+    ";
+        // line 8
         echo $this->extensions['Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension']->renderWebpackLinkTags("app");
         echo "
 ";
@@ -99,7 +102,7 @@ class __TwigTemplate_b5be27a7e556c7df23c2c99b452f7868646134467d815868e7a870ec20f
 
     }
 
-    // line 9
+    // line 11
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -109,7 +112,7 @@ class __TwigTemplate_b5be27a7e556c7df23c2c99b452f7868646134467d815868e7a870ec20f
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 10
+        // line 12
         echo "    <div id=\"app\"></div>
 ";
         
@@ -120,7 +123,7 @@ class __TwigTemplate_b5be27a7e556c7df23c2c99b452f7868646134467d815868e7a870ec20f
 
     }
 
-    // line 13
+    // line 15
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -130,8 +133,14 @@ class __TwigTemplate_b5be27a7e556c7df23c2c99b452f7868646134467d815868e7a870ec20f
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 14
-        echo "    ";
+        // line 16
+        echo "    <!--
+    <link href=\"https://cdn.jsdelivr.net/npm/tailwindcss@0.7.4/dist/preflight.min.css\" rel=\"stylesheet\">
+    <link href=\"https://cdn.jsdelivr.net/npm/tailwindcss@0.7.4/dist/utilities.min.css\" rel=\"stylesheet\">
+    -->
+
+    ";
+        // line 21
         echo $this->extensions['Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension']->renderWebpackScriptTags("app");
         echo "
 ";
@@ -155,7 +164,7 @@ class __TwigTemplate_b5be27a7e556c7df23c2c99b452f7868646134467d815868e7a870ec20f
 
     public function getDebugInfo()
     {
-        return array (  134 => 14,  124 => 13,  113 => 10,  103 => 9,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  144 => 21,  137 => 16,  127 => 15,  116 => 12,  106 => 11,  94 => 8,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -165,6 +174,8 @@ class __TwigTemplate_b5be27a7e556c7df23c2c99b452f7868646134467d815868e7a870ec20f
 {% block title %}Hello AppController!{% endblock %}
 
 {% block stylesheets %}
+    <link href=\"https://cdn.jsdelivr.net/npm/tailwindcss@0.7.4/dist/tailwind.min.css\" rel=\"stylesheet\">
+
     {{ encore_entry_link_tags('app') }}
 {% endblock %}
 
@@ -173,6 +184,11 @@ class __TwigTemplate_b5be27a7e556c7df23c2c99b452f7868646134467d815868e7a870ec20f
 {% endblock %}
 
 {% block javascripts %}
+    <!--
+    <link href=\"https://cdn.jsdelivr.net/npm/tailwindcss@0.7.4/dist/preflight.min.css\" rel=\"stylesheet\">
+    <link href=\"https://cdn.jsdelivr.net/npm/tailwindcss@0.7.4/dist/utilities.min.css\" rel=\"stylesheet\">
+    -->
+
     {{ encore_entry_script_tags('app') }}
 {% endblock %}
 ", "app/index.html.twig", "/home/pierre/Documents/applications/slide-project/templates/app/index.html.twig");
