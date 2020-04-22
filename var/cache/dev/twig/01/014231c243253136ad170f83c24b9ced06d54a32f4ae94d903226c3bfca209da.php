@@ -110,7 +110,7 @@ class __TwigTemplate_b5be27a7e556c7df23c2c99b452f7868646134467d815868e7a870ec20f
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 10
-        echo "    <h1>Accueil</h1>
+        echo "    <div id=\"app\"></div>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -169,7 +169,7 @@ class __TwigTemplate_b5be27a7e556c7df23c2c99b452f7868646134467d815868e7a870ec20f
 {% endblock %}
 
 {% block body %}
-    <h1>Accueil</h1>
+    <div id=\"app\"></div>
 {% endblock %}
 
 {% block javascripts %}
